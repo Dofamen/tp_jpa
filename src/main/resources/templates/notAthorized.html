@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="template1"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<section layout:fragment="pageContent">
+    <div class="container">
+        <div class="col-md-12 text-center mt-5">
+            <h2 class="text-danger">404 Access Denied</h2>
+
+            <a class="btn btn-warning btn-lg mt-5 text-center" th:href="@{index}">Return to Home Page</a>
+        </div>
+    </div>
+</section>
+</body>
+</html>
